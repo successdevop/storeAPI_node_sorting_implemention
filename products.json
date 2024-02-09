@@ -1,0 +1,131 @@
+[
+  {
+    "name": "accent chair",
+    "price": 25,
+    "company": "Dangote",
+    "rating": 4
+  },
+  {
+    "name": "albany sectional",
+    "price": 109,
+    "company": "Globacoms",
+    "rating": 5
+  },
+  {
+    "name": "albany table",
+    "price": 309,
+    "company": "Jesict",
+    "rating": 4.9
+  },
+  {
+    "name": "armchair",
+    "price": 125,
+    "company": "Sheraton",
+    "rating": 4.8
+  },
+  {
+    "name": "bar stool",
+    "price": 40,
+    "company": "Innoson",
+    "rating": 4.6
+  },
+  {
+    "name": "dining table",
+    "price": 42,
+    "company": "Dangote",
+    "rating": 4.55
+  },
+  {
+    "name": "emperor bed",
+    "price": 23,
+    "company": "Globacoms"
+  },
+  {
+    "name": "entertainment center",
+    "price": 59,
+    "featured": true,
+    "company": "Jesict"
+  },
+  {
+    "name": "high-back bench",
+    "price": 39,
+    "featured": true,
+    "company": "Sheraton"
+  },
+
+  {
+    "name": "leather sofa",
+    "price": 99,
+    "company": "Innoson"
+  },
+  {
+    "name": "modern bookshelf",
+    "price": 31,
+    "featured": true,
+    "company": "Innoson"
+  },
+  {
+    "name": "modern poster",
+    "price": 30,
+    "company": "Sheraton"
+  },
+  {
+    "name": "shelf",
+    "price": 30,
+    "company": "Jesict"
+  },
+  {
+    "name": "simple chair",
+    "price": 109,
+    "company": "Globacoms"
+  },
+  {
+    "name": "sofa set",
+    "price": 129,
+    "company": "Dangote"
+  },
+  {
+    "name": "suede armchair",
+    "price": 15,
+    "company": "Jesict"
+  },
+  {
+    "name": "utopia sofa",
+    "price": 79,
+    "featured": true,
+    "company": "Sheraton"
+  },
+  {
+    "name": "vase table",
+    "price": 120,
+    "featured": true,
+    "company": "Innoson"
+  },
+  {
+    "name": "wooden bed",
+    "price": 25,
+    "company": "Globacoms"
+  },
+  {
+    "name": "wooden desk",
+    "price": 15,
+    "company": "Dangote"
+  },
+  {
+    "name": "wooden desk",
+    "price": 40,
+    "company": "Jesict"
+  },
+  {
+    "name": "wooden table",
+    "price": 23,
+    "featured": true,
+    "company": "Innoson"
+  },
+  {
+    "name": "a first wooden table",
+    "price": 23,
+    "featured": true,
+    "company": "Jesict"
+  }
+]
