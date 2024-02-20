@@ -9,7 +9,7 @@ const getAllProductsTest = asyncWrapper(async (req, res) => {
 });
 
 const getAllProducts = asyncWrapper(async (req, res) => {
-  const { featured, name, company, sort, fields } = req.query;
+  const { featured, name, company, sort, fields, numericFilter } = req.query;
   const queryObject = {};
 
   if (featured) {
@@ -24,7 +24,30 @@ const getAllProducts = asyncWrapper(async (req, res) => {
     queryObject.company = company;
   }
 
-  console.log(queryObject);
+  if (numericFilter) {
+    const operatorMap = {
+      ">": "$gt",
+      ">=": "$gte",
+      "=": "$eq",
+      "<": "$lt",
+      "<=": "$lte",
+    };
+    const regEx = /\b(>|>=|=|<|<=)\b/g;
+
+    let filters = numericFilter.replace(
+      regEx,
+      (match) => `-${operatorMap[match]}-`
+    );
+    const options = ["price", "rating"];
+
+    filters = filters.split(",").forEach((item) => {
+      const [field, operator, value] = item.split("-");
+      if (options.includes(field)) {
+        queryObject[field] = { [operator]: Number(value) };
+      }
+    });
+  }
+
   let result = ProductSchema.find(queryObject);
 
   if (sort) {
